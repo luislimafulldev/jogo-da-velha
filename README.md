@@ -1,4 +1,4 @@
-# Jogo da Velha (Tic-Tac-Toe)
+# Jogo da Velha (Gourmet)
 
 ## Descrição
 Um jogo da velha interativo criado com HTML, CSS e JavaScript, permitindo que dois jogadores joguem com marcadores personalizados.
