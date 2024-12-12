@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="startScreen" class="screen">
+      <h2>Jogo da Velha</h2>
+      <input type="text" id="player1Name" placeholder="Nome do Jogador 1" />
+      <select id="player1Marker">
+        <option value="⛏️">⛏️</option>
+        <option value="🔨">🔨</option>
+        <option value="⚔️">⚔️</option>
+      </select>
+      <input type="text" id="player2Name" placeholder="Nome do Jogador 2" />
+      <select id="player2Marker">
+        <option value="⛏️">⛏️</option>
+        <option value="🔨">🔨</option>
+        <option value="⚔️">⚔️</option>
+      </select>
+      <button id="startGame">Começar Jogo</button>
+    </div>
+
+    <div id="gameScreen" class="screen hidden">
+      <div id="scoreboard">
+        <p id="player1Score">Jogador 1 (X): 0 vitórias</p>
+        <p id="player2Score">Jogador 2 (O): 0 vitórias</p>
+      </div>
+      <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      <div id="result"></div>
+      <button id="playAgain">Jogar Novamente</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
